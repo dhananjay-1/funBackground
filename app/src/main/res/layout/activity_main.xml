@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick your side"
+            android:textSize="50sp"
+            android:textColor="#FFFFFF"
+            android:gravity="top|center"
+            />
+
+        <TextView
+            android:id="@+id/thanos"
+            android:padding="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THANOS"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:onClick="sendThanos"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VS"
+            android:textSize="50sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/ironMan"
+            android:padding="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IRON MAN"
+            android:textSize="60sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:onClick="sendIronMan"
+            />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
